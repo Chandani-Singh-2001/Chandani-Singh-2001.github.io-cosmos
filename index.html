@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <title>Responsive Blog</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+   
+</style>
+
+<body>
+<!-- Navbar (For Large Screens, Hidden on Small Screens) -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top d-none d-lg-flex">
+  <div class="container-fluid mt-0 mb-0 p-0">
+      <a class="navbar-brand" href="#">
+          <img src="" alt="Logo" style="width:95px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+    
+<!-- Navbar Menu (Visible Only on Large Screens) -->
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <form class="d-flex d-none d-lg-flex ms-auto">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+  </form>
+</div>
+  </div>
+</nav>
+
+<!-- Navbar (For Small Screens, Works Like Sidebar) -->
+<nav class="navbar navbar-dark bg-dark fixed-top d-lg-none">
+  <div class="container-fluid mt-0 mb-0">
+      <a class="navbar-brand" href="#">
+          <img src="" alt="Logo" style="width:95px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#sidebarOffcanvas" aria-controls="sidebarOffcanvas" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+  </div>
+</nav>
+
+<!-- Sidebar (As Offcanvas Menu for Small Screens) -->
+<div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="sidebarOffcanvas">
+  <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Menu</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+      <div class="list-group list-group-flush">
+          <a class="list-group-item" href="#"><i class="fas fa-house-user text-primary"></i> Home</a>
+          <a class="list-group-item" href="#"><i class="fas fa-chart-line text-primary"></i> Strategy</a>
+          <a class="list-group-item" href="#"><i class="fas fa-bullhorn text-primary"></i> Marketing</a>
+          <a class="list-group-item" href="#"><i class="fas fa-coins text-primary"></i> Workforce</a>
+          <a class="list-group-item" href="#"><i class="fas fa-lightbulb text-primary"></i> Technology</a>
+      </div>
+  </div>
+</div>
+
+<!-- Sidebar (Only for Large Screens) -->
+<div class="sidebar d-none d-lg-block ms-auto">
+  <div class="list-group list-group-flush">
+      <a class="list-group-item" href="#"><i class="fas fa-house-user text-primary"></i> Home</a>
+      <a class="list-group-item" href="#"><i class="fas fa-chart-line text-primary"></i> Strategy</a>
+      <a class="list-group-item" href="#"><i class="fas fa-bullhorn text-primary"></i> Marketing</a>
+      <a class="list-group-item" href="#"><i class="fas fa-coins text-primary"></i> Workforce</a>
+      <a class="list-group-item" href="#"><i class="fas fa-lightbulb text-primary"></i> Technology</a>
+  </div>
+</div>
+    
+    <div class="container-content col-md-10">
+        <h1 class="mb-3 mt-5">MarketPlace</h1>
+        <div class="row ">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4  mb-4">
+                <div class="card">
+                    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                        <!-- Indicators/dots -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                        </div>
+                        <!-- The slideshow/carousel -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://www.devteam.space/wp-content/uploads/2019/10/good-software-developer.jpg"
+                                    alt="Los Angeles" class="d-block card-img-top img-fluid"
+                                    style="width:100%; height: 200px; object-fit: cover;">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtHXB9vjXHGvHQcfoqcLXOCrClHnEru0esGg&s"
+                                    alt="Chicago" class="d-block card-img-top img-fluid"
+                                    style="width:100%; height: 200px; object-fit: cover;">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://blog.planview.com/wp-content/uploads/2024/05/iStock-1400145945-Converted_1200x680.jpg"
+                                    alt="New York" class="d-block card-img-top img-fluid"
+                                    style="width:100%; height: 200px; object-fit: cover;">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the card's content. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque et
+                            quis aperiam ex
+                            magni natus, dolor at
+                            tempore vitae repudiandae minus consequuntur provident voluptatum ut asperiores nihil vero
+                            optio
+                            reiciendis.</p>
+                        <a href="#" class="btn btn-primary rounded-pill">click me!</a>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-xs-12 col-sm-6 col-md-4 col-lg-4 mb-4">
+                <div class="card">
+                    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                        <!-- Indicators/dots -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                        </div> <!-- The slideshow/carousel -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://www.devteam.space/wp-content/uploads/2019/10/good-software-developer.jpg"
+                                    alt="Los Angeles" class="d-block card-img-top img-fluid"
+                                    style="width:100%; height: 200px; object-fit: cover;">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtHXB9vjXHGvHQcfoqcLXOCrClHnEru0esGg&s"
+                                    alt="Chicago" class="d-block card-img-top img-fluid"
+                                    style="width:100%; height: 200px; object-fit: cover;">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://blog.planview.com/wp-content/uploads/2024/05/iStock-1400145945-Converted_1200x680.jpg"
+                                    alt="New York" class="d-block card-img-top img-fluid"
+                                    style="width:100%; height: 200px; object-fit: cover;">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio temporibus non rem
+                            reprehenderit
+                            quod
+                            expedita est maiores perferendis cumque deleniti. Vitae tempora praesentium nesciunt fuga
+                            corrupti itaque
+                            suscipit facilis mollitia. card's content.</p>
+                        <a href="#" class="btn btn-primary rounded-pill">click me!</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class=" col-xs-12 col-sm-6 col-md-4 col-lg-4 mb-4 ">
+                <div class="card">
+                    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                        <!-- Indicators/dots -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                        </div>
+
+                        <!-- The slideshow/carousel -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://www.devteam.space/wp-content/uploads/2019/10/good-software-developer.jpg"
+                                    alt="Los Angeles" class="d-block card-img-top img-fluid"
+                                    style="width:100%; height: 200px; object-fit: cover;">
+
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtHXB9vjXHGvHQcfoqcLXOCrClHnEru0esGg&s"
+                                    alt="Chicago" class="d-block card-img-top img-fluid"
+                                    style="width:100%; height: 200px; object-fit: cover;">
+
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://blog.planview.com/wp-content/uploads/2024/05/iStock-1400145945-Converted_1200x680.jpg"
+                                    alt="New York" class="d-block card-img-top img-fluid"
+                                    style="width:100%; height: 200px; object-fit: cover;">
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls/icons -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et voluptatibus neque odio pariatur minima recusandae,
+                           quo fugit eveniet fuga porro veritatis temporibus asperiores sunt quod inventore quos ipsum, minus non?
+                           card's content.</p>
+                        <a href="#" class="btn btn-primary rounded-pill">click me!</a>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-xs-12 col-sm-6 col-md-4 col-lg-4 mb-4 ">
+                <div class="card ">
+                    <img src="https://blog.planview.com/wp-content/uploads/2024/05/iStock-1400145945-Converted_1200x680.jpg"
+                        alt="New York" class="d-block card-img-top img-fluid"
+                        style="width:100%; height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary rounded-pill">click me!</a>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-xs-12 col-sm-6 col-md-4 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtHXB9vjXHGvHQcfoqcLXOCrClHnEru0esGg&s"
+                        class=" d-block card-img-top img-fluid" style="width:100%; height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary rounded-pill">click me!</a>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-xs-12 col-sm-6 col-md-4 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="https://blog.planview.com/wp-content/uploads/2024/05/iStock-1400145945-Converted_1200x680.jpg"
+                        alt="New York" class="d-block card-img-top img-fluid"
+                        style="width:100%; height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary rounded-pill">click me!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container-content ">
+        <div class="row  align-items-center">
+            <div class="col-lg-5   ">
+                <h3>Common Suits</h3>
+                <p>Custom suits e-commerce platform with fit visualization Suit</p>
+                <p><strong>Personalized Fashion</strong></p>
+            </div>
+            <div class="col-lg-7 text-center">
+                <img src="https://hipster-inc.com/wp-content/uploads/2023/04/commonsuits-1.webp"
+                    class="img-fluid rounded" alt="Common Suits">
+                <div class="d-flex flex-wrap justify-content-center mt-3">
+                    <button class="btn btn-outline-dark m-2">Customize Suit</button>
+                    <button class="btn btn-outline-dark m-2">Book Appointment</button>
+                    <button class="btn btn-outline-dark m-2">User Dashboard</button>
+                    <button class="btn btn-outline-dark m-2">Admin Panel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- Floating Chat -->
+    <div id="floating-chat" class="floating-chat">
+        <i class="fas fa-universal-access"></i>
+    </div>
+    <div class="accessibility-menu" id="accessibilityMenu">
+        <div class="accessibility-menu-header">
+            Accessibility Menu
+            <div>
+                <i class="fas fa-times" id="closeMenu"></i>
+            </div>
+        </div>
+        <div id="google_translate_element"></div>
+        <div class="accessibility-options">
+            <button id="toggleDarkMode"><i class="fas fa-moon"></i> Dark Mode</button>
+            <button id="highlightLinks"><i class="fas fa-link"></i> Highlight Links</button>
+            <button id="increaseTextSize"><i class="fas fa-text-height"></i> Large Text</button>
+            <button id="monochromeMode"><i class="fas fa-adjust"></i> Monochrome</button>
+            <button id="highlightTitles"><i class="fas fa-highlighter"></i> Highlight Titles</button>
+            <button id="readingGuide"><i class="fas fa-book-reader"></i> Reading Guide</button>
+            <button id="bigCursor"><i class="fas fa-hand-pointer"></i> Big Cursor</button>
+           
+        </div>
+    </div>
+   
+
+    <!-- Client Reviews -->
+    <div class="container-content ml-4">
+        <!-- Section Header -->
+        <div class="row">
+            <div class="col-lg-5 pt-5">
+                <h1>What our clients say?</h1>
+                <div class="rounded-3 text-light p-4 m-5">
+                    <h6>Success Metrics</h6>
+                    <h5>Impact</h5>
+                    <p>4000+</p>
+                    <img width="40" height="30" src="https://hipster-inc.com/wp-content/uploads/2021/09/download-2.png"
+                        class="download-icon" alt="download icon">
+                    <p>Downloads</p>
+                </div>
+            </div>
+
+            <div class="col-sm-10-md-8 col-lg-7" style="width: 100%">
+                <!-- ScrollSpy Navigation -->
+                <nav id="scrollspyNav" class="navbar navbar-light">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#section1">Client 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section2">Client 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section3">Client 3</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- ScrollSpy Sections -->
+                <div id="scrollspyContent" class="content mt-1 p-4" data-bs-spy="scroll" data-bs-target="#scrollspyNav"
+                    data-bs-offset="0" tabindex="0" style="height: 300px;  overflow-y: auto;">
+                    <div id="section1">
+                        <h5>Client 1</h5>
+                        <p>Great experience, highly recommend this service! Lorem ipsum dolor sit amet consectetur,
+                            Lorem ipsum
+                            dolor, sit amet consectetur adipisicing elit.
+                            Impedit nesciunt, atque esse a illo alias at nemo inventore corrupti ipsa ullam eligendi,
+                            blanditiis
+                            dignissimos, itaque culpa possimus expedita harum quasi!
+                            adipisicing elit.</p>
+                    </div>
+                    <div id="section2">
+                        <h5>Client 2</h5>
+                        <p>Very professional and easy to work with. Lorem ipsum dolor sit amet, consectetur Lorem, ipsum
+                            dolor sit
+                            amet consectetur adipisicing elit. Iusto quae nulla
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam voluptatibus asperiores
+                            nulla velit eaque
+                            modi. Tenetur nemo perspiciatis, reiciendis odio ut expedita
+                            sapiente dolorum explicabo in dicta, iste hic maiores! voluptatibus molestias consequuntur,
+                            dolore ipsum
+                            quis magnam dolorum tempore, quibusdam reiciendis itaque corporis corrupti culpa, est eaque
+                            repellendus
+                            iste.
+                            adipisicing elit.</p>
+                    </div>
+                    <div id="section3">
+                        <h5>Client 3</h5>
+                        <p>Exceeded my expectations, would work with them again. Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Accusantium totam dignissimos perferendis asperiores doloribus ab consequuntur debitis
+                            recusandae!
+                            Laboriosam consectetur facilis possimus facere voluptate recusandae totam ratione sapiente
+                            libero
+                            blanditiis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services Section -->
+    <div class="container-content">
+        <div class="row justify-content-center">
+            <div class="col-12  p-3">   
+                <h1 class="text">Our Services</h1>
+                <p class="text">We bring the right expertise mix to create a holistic digital solution. </p>
+            </div>
+            <div class="col-lg-12">
+                <div class="owl-carousel">
+                    <div class="text-center">
+                        <div class="rounded-4">
+                            <h4>Web Development</h4>
+                            <p>Great experience, highly recommend this service! Lorem ipsum dolor sit amet
+                                consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+                                mollitia recusandae numquam modi
+                                quo quod maxime deserunt ullam natus? Necessitatibus fugiat aut excepturi eos eius,
+                                earum voluptates cumque distinctio numquam.</p>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="rounded-4">
+                            <img src="https://hipster-inc.com/wp-content/uploads/2021/10/icons-services-mobile-development.png"
+                                alt="Mobile App Development">
+                            <h4>Mobile App Development</h4>
+                            <p>Very professional and easy to work with. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nobis dolorem neque. Eveniet ipsa, sequi accusamus voluptatem atque eligendi quis ut unde placeat quae eius,
+                               blanditiis voluptas vero porro inventore!</p>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="rounded-4">
+                            <h4>UI/UX</h4>
+                            <p>Exceeded my expectations, would work with them again.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae iste harum fugiat nemo
+                                nihil laudantium, libero odio accusantium dolorum dolore quibusdam vero, eaque temporibus
+                                perspiciatis. Inventore adipisci illum vel ea.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="rounded-4">
+                            <h4>Other Technologies</h4>
+                            <p>Exceeded my expectations, would work with them again.
+                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem itaque dolore consectetur rerum, odio incidunt, distinctio officiis minus iusto voluptas deleniti quas ducimus? Repellendus doloribus, soluta veritatis consequuntur dicta id.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="container-content">
+        <div class="row px-3">
+            <!-- Footer Header -->
+            <div class="col-12 mb-4">
+                <h1>Have an Idea......?</h1>
+                <h6>Let's Discuss</h6>
+            </div>
+
+            <!-- Footer Column: Company & Industries -->
+            <div class="col-lg-4 mb-4">
+                <h5 class="head mt-3 pt-5">Company</h5>
+                <ul class="list-group">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Process</a></li>
+                    <li><a href="#">Clients</a></li>
+                </ul>
+                <h5 class="head mt-3 pt-5">Industries</h5>
+                <ul class="list-group">
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Fashion</a></li>
+                    <li><a href="#">F&B</a></li>
+                </ul>
+            </div>
+
+            <!-- Footer Column: Ready-solutions & Services -->
+            <div class="col-lg-4 mb-4">
+                <h5 class="head mt-3 pt-5">Ready-solutions</h5>
+                <ul class="list-group">
+                    <li><a href="#">Fashion Visualiser</a></li>
+                    <li><a href="#">Community Platform</a></li>
+                    <li><a href="#">Education App Development</a></li>
+                </ul>
+                <h5 class="head mt-3 pt-5">Services</h5>
+                <ul class="list-group">
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Mobile App Development</a></li>
+                    <li><a href="#">UI/UX Design</a></li>
+                </ul>
+            </div>
+
+            <!-- Footer Column: Contact -->
+            <div class=" footer-section col-lg-4 mb-4 pt-5">
+                <h5 class="head mt-3 pt-5 text-white">Contact Us</h5>
+                <p class="text-white">75 Ayer Rajah Crescent</p>
+                <p class="text-white">#01-04, Singapore 139953</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Scripts -->
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 15,
+                nav: true,
+                responsive: {
+                    0: { items: 1 },
+                    600: { items: 2 },
+                    1000: { items: 3 }
+                }
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navbarCollapse = document.getElementById('navbarSupportedContent');
+            const navLinks = navbarCollapse.querySelectorAll('.nav-link');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (navbarCollapse.classList.contains('show')) {
+                        new bootstrap.Collapse(navbarCollapse).hide();
+                    }
+                });
+            });
+        });
+    </script>
+
+    <!-- Google translate element-->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement(
+            {pageLanguage: 'en'},
+            'google_translate_element'
+          );
+        }
+      </script>
+      <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script>
+        document.getElementById("floating-chat").addEventListener("click", function () {
+            document.getElementById("accessibilityMenu").classList.toggle("active");
+        });
+        document.getElementById("closeMenu").addEventListener("click", function () {
+            document.getElementById("accessibilityMenu").classList.remove("active");
+        });
+        document.getElementById("toggleDarkMode").addEventListener("click", function () {
+            document.body.classList.toggle("dark-mode");
+        });
+        document.getElementById("highlightLinks").addEventListener("click", function () {
+            document.body.classList.toggle("highlight-links");
+        });
+        document.getElementById("increaseTextSize").addEventListener("click", function () {
+            document.body.classList.toggle("large-text");
+        });
+        document.getElementById("monochromeMode").addEventListener("click", function () {
+            document.body.classList.toggle("monochrome");
+        });
+        document.getElementById("highlightTitles").addEventListener("click", function () {
+            document.body.classList.toggle("highlight-title");
+        });
+        document.getElementById("readingGuide").addEventListener("click", function () {
+            if (document.querySelector(".reading-guide-bar")) {
+                document.querySelector(".reading-guide-bar").remove();
+            } else {
+                let guide = document.createElement("div");
+                guide.classList.add("reading-guide-bar");
+                document.body.appendChild(guide);
+                document.addEventListener("mousemove", function (e) {
+                    guide.style.top = e.clientY + "px";
+                });
+            }
+        });
+        document.getElementById("bigCursor").addEventListener("click", function () {
+            document.body.classList.toggle("big-cursor");
+        });
+        document.querySelectorAll('.accessibility-options button').forEach(button => {
+        button.addEventListener('click', function() {
+            this.classList.toggle('active');
+    
+            // Show which item is selected in the console
+            console.log(this.innerText + " is now " + (this.classList.contains('active') ? "ON" : "OFF"));
+        });
+    });
+    </script>
+   
+    
+
+   
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+</body>
+
+</html>
+
+
